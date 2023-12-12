@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Event Planner</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Event Planner</h1>
+        <div id="venue-selection">
+            <h2>Venue Selection</h2>
+            <label for="venue">Choose a venue:</label>
+            <select id="venue" name="venue">
+                <option value="venue1">Venue 1</option>
+                <option value="venue2">Venue 2</option>
+                <option value="venue3">Venue 3</option>
+            </select>
+        </div>
+        <div id="guest-list">
+            <h2>Guest List</h2>
+            <ul id="guest-list-container">
+            </ul>
+            <form id="guest-form">
+                <label for="guest-name">Guest Name:</label>
+                <input type="text" id="guest-name" name="guest-name" required>
+                <button type="button" onclick="addGuest()">Add Guest</button>
+            </form>
+        </div>
+        <div id="program-creation">
+            <h2>Program Creation</h2>
+            <ul id="program-list">
+            </ul>
+            <form id="program-form">
+                <label for="activity">Activity:</label>
+                <input type="text" id="activity" name="activity" required>
+                <button type="button" onclick="addActivity()">Add Activity</button>
+            </form>
+        </div>
+        <div id="budget-management">
+            <h2>Budget Management</h2>
+            <p>Total Budget: $<span id="total-budget">0.00</span></p>
+            <ul id="budget-list">
+            </ul>
+            <form id="budget-form">
+                <label for="expense">Expense:</label>
+                <input type="text" id="expense" name="expense" required>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" step="0.01" required>
+                <button type="button" onclick="addExpense()">Add Expense</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

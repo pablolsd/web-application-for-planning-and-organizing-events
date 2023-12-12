@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../backend/app');
+const app = require('../project-root/backend/app');
 
 describe('Security Tests', () => {
   it('should deny unauthorized access', async () => {

@@ -1,0 +1,86 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f8f8f8;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+#app {
+	text-align: center;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+h1 {
+	color: #333;
+}
+
+#venue-selection,
+#guest-list,
+#program-creation,
+#budget-management {
+	margin-top: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+	color: #555;
+}
+
+select, input, button {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #4caf50;
+	color: #fff;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li {
+	margin-bottom: 8px;
+	padding: 8px;
+	background-color: #f0f0f0;
+	border-radius: 4px;
+}
+
+#total-budget {
+	font-weight: bold;
+	color: #333;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+	#app {
+			padding: 10px;
+	}
+
+	select, input, button {
+			margin-bottom: 12px;
+	}
+}
